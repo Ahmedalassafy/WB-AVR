@@ -26,15 +26,14 @@
     "problemID": {
       "type": "number",
       "required": true
+    },
+    "locationID": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],
   "relations": {
-    "locations": {
-      "type": "hasOne",
-      "model": "locations",
-      "foreignKey": "orderID"
-    },
     "problems": {
       "type": "belongsTo",
       "model": "problems",
@@ -43,7 +42,7 @@
     "visits": {
       "type": "hasMany",
       "model": "visits",
-      "foreignKey": "nextOrder"
+      "foreignKey": "orderID"
     }
   },
   "acls": [],

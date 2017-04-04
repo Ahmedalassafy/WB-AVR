@@ -67,7 +67,9 @@
   },
   "route": {
     "dataSource": "postgres",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "visits": {
     "dataSource": "postgres",

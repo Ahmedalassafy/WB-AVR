@@ -14,14 +14,16 @@
     "y-coord": {
       "type": "number",
       "required": true
-    },
-    "orderID": {
-      "type": "number",
-      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "orders": {
+      "type": "hasMany",
+      "model": "orders",
+      "foreignKey": "locationID"
+    }
+  },
   "acls": [],
   "methods": {}
 }

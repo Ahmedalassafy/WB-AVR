@@ -11,14 +11,6 @@
       "type": "number",
       "required": true
     },
-    "nextOrder": {
-      "type": "number",
-      "required": true
-    },
-    "previousOrder": {
-      "type": "number",
-      "required": true
-    },
     "startTime": {
       "type": "number",
       "required": true
@@ -28,6 +20,18 @@
       "required": true
     },
     "routeID": {
+      "type": "number",
+      "required": true
+    },
+    "nextVisit": {
+      "type": "number",
+      "required": true
+    },
+    "previousVisit": {
+      "type": "number",
+      "required": true
+    },
+    "orderID": {
       "type": "number",
       "required": true
     }
