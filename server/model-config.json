@@ -1,0 +1,78 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "problems": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "orders": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "locations": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "vehiclesType": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "solution": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "route": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "visits": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+}

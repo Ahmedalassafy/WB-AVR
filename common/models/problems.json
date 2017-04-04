@@ -1,0 +1,39 @@
+{
+  "name": "problems",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ordersNumber": {
+      "type": "number",
+      "required": true
+    },
+    "maxVehicles": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "orders": {
+      "type": "hasMany",
+      "model": "orders",
+      "foreignKey": "problemID"
+    },
+    "vehiclesTypes": {
+      "type": "hasMany",
+      "model": "vehiclesType",
+      "foreignKey": "problemID"
+    },
+    "solutions": {
+      "type": "hasMany",
+      "model": "solution",
+      "foreignKey": "problemID"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

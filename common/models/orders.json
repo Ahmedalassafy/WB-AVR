@@ -1,0 +1,51 @@
+{
+  "name": "orders",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "demand": {
+      "type": "number",
+      "required": true
+    },
+    "readyTime": {
+      "type": "number",
+      "required": true
+    },
+    "dueDate": {
+      "type": "number",
+      "required": true
+    },
+    "serviceTime": {
+      "type": "number",
+      "required": true
+    },
+    "problemID": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "locations": {
+      "type": "hasOne",
+      "model": "locations",
+      "foreignKey": "orderID"
+    },
+    "problems": {
+      "type": "belongsTo",
+      "model": "problems",
+      "foreignKey": "problemID"
+    },
+    "visits": {
+      "type": "hasMany",
+      "model": "visits",
+      "foreignKey": "nextOrder"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

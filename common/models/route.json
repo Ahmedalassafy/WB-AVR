@@ -1,0 +1,41 @@
+{
+  "name": "route",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstOrder": {
+      "type": "number",
+      "required": true
+    },
+    "lastOrder": {
+      "type": "number",
+      "required": true
+    },
+    "solutionID": {
+      "type": "number",
+      "required": true
+    },
+    "vehiclesTypeID": {
+      "type": "number",
+      "required": true
+    },
+    "visitsNumber": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "visits": {
+      "type": "hasMany",
+      "model": "visits",
+      "foreignKey": "routeID"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

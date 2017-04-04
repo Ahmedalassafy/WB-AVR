@@ -1,0 +1,39 @@
+{
+  "name": "solution",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "problemID": {
+      "type": "number",
+      "required": true
+    },
+    "routesNumber": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "routes": {
+      "type": "hasMany",
+      "model": "route",
+      "foreignKey": "solutionID"
+    },
+    "visits": {
+      "type": "hasMany",
+      "model": "visits",
+      "foreignKey": "solutionID"
+    },
+    "problems": {
+      "type": "belongsTo",
+      "model": "problems",
+      "foreignKey": "problemID"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

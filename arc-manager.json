@@ -1,0 +1,12 @@
+{
+  "ids": {
+    "ManagerHost": 2,
+    "LoadBalancer": 1
+  },
+  "models": {
+    "ManagerHost": {
+      "e5a527e1-7cc4-4eea-9e14-d6d0edca3199": "{\"id\":\"e5a527e1-7cc4-4eea-9e14-d6d0edca3199\",\"host\":\"localhost\",\"port\":8701,\"actions\":[\"delete\",\"edit\",\"env-set\",\"env-get\",\"stop\",\"restart\",\"cluster-restart\",\"license-push\"],\"protocol\":\"http\",\"created\":1490880340349,\"error\":null,\"errorType\":null,\"app\":{\"name\":\"wb-ar-be\",\"version\":null,\"port\":3001},\"processes\":{\"pids\":[{\"parentPid\":6700,\"pid\":9208,\"workerId\":1,\"listeningSockets\":[{\"addressType\":4,\"address\":\"0.0.0.0\",\"port\":3001}],\"isTrackingObjects\":false,\"isProfiling\":false,\"isTracing\":false,\"debugger\":{\"running\":false,\"port\":null},\"watchdogTimeout\":0,\"watchdogStallout\":0,\"isSnapshotting\":false,\"startTime\":\"2017-04-01T09:40:26.019Z\",\"stopTime\":null,\"stopReason\":\"\",\"id\":104,\"serviceInstanceId\":1},{\"parentPid\":8012,\"pid\":6700,\"workerId\":0,\"listeningSockets\":[],\"isTrackingObjects\":false,\"isProfiling\":false,\"isTracing\":false,\"debugger\":{\"running\":false,\"port\":null},\"watchdogTimeout\":0,\"watchdogStallout\":0,\"isSnapshotting\":false,\"startTime\":\"2017-04-01T09:40:25.475Z\",\"stopTime\":null,\"stopReason\":\"\",\"id\":105,\"serviceInstanceId\":1}]},\"$$hashKey\":\"object:164\",\"isHostProblem\":true}"
+    },
+    "LoadBalancer": {}
+  }
+}

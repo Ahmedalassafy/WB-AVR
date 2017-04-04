@@ -1,0 +1,27 @@
+{
+  "name": "locations",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "x-coord": {
+      "type": "number",
+      "required": true
+    },
+    "y-coord": {
+      "type": "number",
+      "required": true
+    },
+    "orderID": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
